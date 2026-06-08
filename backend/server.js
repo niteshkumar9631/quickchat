@@ -10,7 +10,10 @@ const { app, server } = require('./src/socket');
 connectDB();
 
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: [
+    'http://localhost:5173',
+    'https://quickchat-five-iota.vercel.app'
+  ],
   credentials: true
 }));
 app.use(require('express').json({ limit: '10mb' }));
