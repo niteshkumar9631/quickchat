@@ -3,7 +3,7 @@ import { axiosInstance } from '../lib/axios';
 import toast from 'react-hot-toast';
 import { io } from 'socket.io-client';
 
-const SOCKET_URL = 'http://localhost:5000';
+const SOCKET_URL = 'https://quickchat-s0wu.onrender.com'
 
 export const useAuthStore = create((set, get) => ({
   authUser: null,
